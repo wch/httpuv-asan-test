@@ -40,6 +40,7 @@ In one terminal, start a basic web server:
 ```
 docker run --rm -ti --name ra r-asan /bin/bash
 
+export ASAN_OPTIONS=malloc_context_size=150
 RD
 library(httpuv)
 library(promises)

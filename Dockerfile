@@ -28,3 +28,4 @@ RUN RD -e  "install.packages('BH')"
 
 RUN RD -e  "install.packages(c('devtools', 'httpuv'), Ncpus=4)"
 RUN RD -e "devtools::install_github('rstudio/httpuv@background-thread', Ncpus=4)"
+RUN RD -e "devtools::install_github('r-lib/later', Ncpus=4)"
