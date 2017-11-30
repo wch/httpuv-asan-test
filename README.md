@@ -50,7 +50,7 @@ content <- list(
   body = "abc"
 )
 
-startBackgroundServer("0.0.0.0", 5000,
+startServer("0.0.0.0", 5000,
   list(
     onHeaders = function(req) {
       if (req$PATH_INFO == "/header") {
